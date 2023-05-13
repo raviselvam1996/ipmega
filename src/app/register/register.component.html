@@ -1,0 +1,33 @@
+<div>
+    <div>
+      <label for="yname">Your Name:</label>
+      <input type="text" [(ngModel)]="record.yname" >
+    </div><br>
+    <div>
+      <label>Email:</label>
+      <input [(ngModel)]="record.email">
+    </div><br>
+    <div>
+      <label >Phone Number:</label>
+      <input   [(ngModel)]="record.pnumber">
+  
+    </div><br>
+    <div>
+      <label >Password:</label>
+      <input   [(ngModel)]="record.password">
+    </div><br>
+    <div>
+      <label >Confirm Password:</label>
+      <input [(ngModel)]="record.cpassword">
+    </div><br>
+    <div>
+      <button type="submit" (click)=" addrecord()">post</button>
+      <button type="submit" (click)=" refreshPeople()">get</button>
+    </div>
+  </div>
+  
+
+
+
+  
+ 

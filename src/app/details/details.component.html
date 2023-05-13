@@ -1,0 +1,26 @@
+<p>details works!</p>
+<button type="submit" (click)=" refreshPeople()">get</button>
+<table class='table table-bordered'>
+    <thead>
+      <tr>
+        <th>Your Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Password</th>
+        <th>Confirm Password</th>
+        <th>id</th>
+        <th>delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let records of person;">
+        <td>{{records.yname}}</td>
+        <td>{{records.email}}</td>
+        <td>{{records.pnumber}}</td>
+        <td>{{records.password}}</td>
+        <td>{{records.cpassword}}</td>
+        <td>{{records.id}}</td>
+        <td><button (click)="ondelete(records.id)">delete</button></td>
+      </tr>
+    </tbody>
+  </table>
