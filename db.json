@@ -1,12 +1,36 @@
 {
   "person": [
     {
-      "yname": "ravi",
-      "email": "raviselvam1996@gmail.com",
-      "pnumber": "9352934",
-      "password": "rowiero",
-      "cpassword": "jsfkhskfk",
+      "yname": "Ravi Selvam",
+      "email": "ravisevlvam27041996@gmail.com",
+      "pnumber": "+919578619893",
+      "password": "uthayam",
+      "cpassword": "uthayam",
       "id": 7
+    },
+    {
+      "yname": "Ravi Selvam",
+      "email": "ravisevlvam27041996@gmail.com",
+      "pnumber": "+919578619893",
+      "password": "uthayam",
+      "cpassword": "uthayam",
+      "id": 8
+    },
+    {
+      "yname": "ravi",
+      "email": "ravi@gmail.com",
+      "pnumber": "9578619893",
+      "password": "uthayam",
+      "cpassword": "uthayam",
+      "id": 9
+    },
+    {
+      "yname": "ravi",
+      "email": "ravi@gmail.com",
+      "pnumber": "9578619893",
+      "password": "uthayam",
+      "cpassword": "uthayam",
+      "id": 10
     }
   ]
 }

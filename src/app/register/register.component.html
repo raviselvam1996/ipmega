@@ -1,30 +1,73 @@
-<div>
+<div class="ravi">
+  
+<form #contactForm="ngForm">
+  <h1 style="text-align: center;color:rgb(239, 229, 229)"><u>Register Form</u> </h1><br><br>
     <div>
       <label for="yname">Your Name:</label>
-      <input type="text" [(ngModel)]="record.yname" >
+      <input type="text"  class="form-control" name="yname" [(ngModel)]="record.yname" >
     </div><br>
     <div>
-      <label>Email:</label>
-      <input [(ngModel)]="record.email">
+      <label>Email  :</label>
+      <input name="email" class="form-control" [(ngModel)]="record.email">
     </div><br>
     <div>
       <label >Phone Number:</label>
-      <input   [(ngModel)]="record.pnumber">
+      <input name="pnumber" class="form-control"  [(ngModel)]="record.pnumber">
   
     </div><br>
     <div>
       <label >Password:</label>
-      <input   [(ngModel)]="record.password">
+      <input name="password" class="form-control"  [(ngModel)]="record.password">
     </div><br>
     <div>
       <label >Confirm Password:</label>
-      <input [(ngModel)]="record.cpassword">
+      <input name="cpassword" class="form-control" [(ngModel)]="record.cpassword">
     </div><br>
     <div>
-      <button type="submit" (click)=" addrecord()">post</button>
-      <button type="submit" (click)=" refreshPeople()">get</button>
+      <button type="submit" (click)=" addrecord()" class="btn btn-primary btn-lg">{{editmode?'Update':'Register'}}</button>
+      <!-- <button type="submit" (click)=" refreshPeople()">get</button> -->
     </div>
-  </div>
+</form>
+</div>
+
+<table class='table table-bordered table-striped' >
+  <thead class="table  table-dark">
+    <tr>
+      <th>Your Name</th>
+      <th>Email</th>
+      <th>Phone Number</th>
+      <th>Password</th>
+      <th>Confirm Password</th>
+      <th>id</th>
+      <th>delete</th>
+      <th>edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let records of person;">
+      
+      <td>{{records.yname}}</td>
+      <td>{{records.email}}</td>
+      <td>{{records.pnumber}}</td>
+      <td>{{records.password}}</td>
+      <td>{{records.cpassword}}</td>
+      <td>{{records.id}}</td>
+      <td><button class="btn btn-primary" (click)="onedit2(records.id)">Edit</button></td>
+      <td><button class="btn btn-danger" (click)="ondelete(records.id)">Delete</button></td>
+      
+      
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
   
 
 

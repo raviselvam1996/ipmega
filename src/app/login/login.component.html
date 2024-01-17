@@ -1,0 +1,20 @@
+<div class="ravi">
+  <h1 class="ravi1">Welcome To IPMEGA!</h1>
+<form [formGroup]="form" (ngSubmit)="login()">
+<div>
+    <label>UserName:</label>
+    <input style="margin-left: 25px;" type="text" class="form-control-sm" formControlName="username">
+    <!-- <span *ngIf="(form.get('yname')?.hasError('required'))">pleaase enter valid username</span> -->
+</div><br>
+<div>
+    <div >
+      <label>Password:</label>
+      <input style="margin-left: 33px;" type="password" class="form-control-sm" formControlName="paassword">
+      <!-- <span *ngIf="(form.get('password')?.hasError('required'))">pease enter valid password</span> -->
+    </div>
+</div>
+<p>{{result}}</p>
+<button type="submit" class="btn btn-primary" (click)="login()">login</button>
+<button class="btn btn-primary ms-3"><a style="text-decoration: none;color:aliceblue;" [routerLink]="['/register']">Register</a></button>
+</form>
+</div>
